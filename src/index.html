@@ -3,12 +3,26 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Page title</title>
+    <title>Images search</title>
     <link rel="stylesheet" href="./sass/index.scss" />
     <script type="module" src="./index.js"></script>
   </head>
   <body>
-    <!-- ❗️❗️❗️ Add partials like so for every page -->
-    <include src="./partials/example.html"></include>
+    <form class="search-form" id="search-form">
+      <input
+        type="text"
+        name="searchQuery"
+        autocomplete="off"
+        placeholder="Search images..."
+        class="search-input"
+      />
+
+      <button type="submit" class="search-button">Search 🔎</button>
+    </form>
+
+    <div class="gallery">
+      <!-- Img cards -->
+    </div>
+    <button type="button" class="back-to-top">↑ To top ↑</button>
   </body>
 </html>
